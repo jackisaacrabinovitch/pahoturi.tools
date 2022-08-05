@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LaTeX For Ende</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="LaTeXforEnde.js"></script>
+</head>
+<body>
+    <h1>LaTeX for Ende</h1>
+    <div class="divcontainer">
+        <div class="inputdiv">
+            <p>Example Text</p>
+            <textarea name="inputtextarea" id="inputtextarea">Diba to indrang ada ingoll d-ey-a-r-n-än ngamo ingoll alle ada ka tätämall to da-eya.
+that light light like.this like rem-ven-go-3sgS 1.sg.poss face abl like.this cntf firefly light int.dem-cop.pst.sgS
+That light was coming towards me, I thought it was a firefly [but it wasn't].
+Kurupel2017
+SE_PN024 ln. 31</textarea>
+            <p>An example defined by five lines, the first line is an orthography with segmentation shown, the second line is a gloss, the third line is a translation, the fourth line is a citekey for a LaTeX bibliography, and the fifth line is the location within the text where the example can be found.</p>
+        </div>
+        <div class="inputdiv">
+            <p>Leipzig Rule Table</p>
+            <textarea name="rulestextarea" id="rulestextarea">
+rem,   Rem,    rem,   remote past,
+ven,   Ven,    ven,   venitive,
+3sgS,  TsgS,   3sgS,  third singular subject of an intransitive clause
+1,     First,  1,     first person
+sg,    Sg,     sg,    singular
+poss,  Poss,   poss,  possessive
+abl,   Abl,    abl,   ablative
+cntf,  Cntf,   cntf,  counterfactual
+int,   Int,    int,   interrogative
+dem,   Dem,    dem,   demonstrative
+cop,   Cop,    cop,   copula
+pst,   Pst,    pst,   past
+sgS,   SgS,    sgS,   singular subject of an intransitive clause
+</textarea>
+        <p>This is a comma separated table of Leipzig rules; each row is a leipzig rule, where the first column represents the string that this program will search for in the text (surrounded by spaces, commas, or equal signs), the second column is the name of the LaTeX function which will represent this gloss, the third column is the small caps (written in lowercase) text which should represent the gloss in LaTeX, and the fourth column is the definition of the gloss. Feel free to only write the first three columns for an entry if you want it to show up in the example code but not have a corresponding Leipzig code.</p>
+        </div>
+    </div>
+    <p>
+        <button onclick="makeText()">Convert</button>
+    </p>
+    <div class="divcontainer">
+        <div class="inputdiv">
+            <p>Example LaTeX Code:</p>
+            <textarea name="outputtextarea" id="outputtextarea"></textarea>
+        </div>
+        <div class="inputdiv">
+            <p>Leipzig LaTeX Code:</p>
+            <textarea name="leipzigoutputtextarea" id="leipzigoutputtextarea"></textarea>
+        </div>
+    </div>
+
+    <p>Debug: <span id="debug"></span></p>
+    <p>HTML Display:</p>
+    <div id="htmldisplay"></div>
+</body>
+</html>

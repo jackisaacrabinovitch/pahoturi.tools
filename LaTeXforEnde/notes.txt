@@ -1,0 +1,18 @@
+Diba to indrang ada ingoll deyarnän ngamo ingoll alle ada ka tätämall to deya
+that light light like.this like go.rem.ven.3sgS 1.sg.poss face abl like.this cntf firefly cop.pst.sgS
+That light was coming towards me, I thought it was a firefly [but it wasn't].
+
+
+cntf firefly cop.pst.sgS
+
+rem = \Rem
+ven = \Ven
+3sgS = \TsgS
+1 = \First
+sg = \Sg
+poss = \Poss
+abl = \Abl
+cntf = \Cntf
+cop = \Cop
+pst = \Pst
+sgS = \SgS

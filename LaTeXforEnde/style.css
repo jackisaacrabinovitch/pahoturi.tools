@@ -1,0 +1,39 @@
+.divcontainer{
+    display: flex;
+    gap: 30px;
+    box-sizing: border-box;
+    flex-wrap: nowrap;
+}
+.inputdiv{
+    display: inline-block;
+    flex: 1;
+    flex-grow: 1;
+}
+textarea{
+    height: 200px;
+    width: 100%;
+}
+
+
+.glossline{
+    display:flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+}
+.transline{
+    display:block;
+}
+.word{
+    display:flex;
+    flex-direction: column;
+}
+.textitem{
+    display:inline-block;
+    font-style: italic;
+}
+.glossitem{
+    display:inline-block;
+}
+.glossabbr{
+    font-variant: small-caps;
+}
