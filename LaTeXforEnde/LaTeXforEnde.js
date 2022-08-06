@@ -10,6 +10,7 @@ String.prototype.Phonemic = function (text){
         replace(/ao/gi,"aw").
         replace(/ae/gi,"aj").
         replace(/oe/gi,"oj").
+        replace(/y/gi,"j").
         replace(/g/gi,"ɡ").
         toLowerCase().
         replace(/[\.,;:]/g,"")
