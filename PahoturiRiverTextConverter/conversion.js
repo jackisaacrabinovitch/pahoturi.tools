@@ -231,12 +231,14 @@ function buttonPress(){
 function Swap(){
 	var newoutputsystem = inputsystem.selectedIndex;
 	var newinputsystem = outputsystem.selectedIndex;
-	var newoutput = inputtext.value;
-	var newinput = outputtext.value;
 	inputsystem.selectedIndex = newinputsystem;
 	outputsystem.selectedIndex = newoutputsystem;
-	inputtext.value = newinput;
-	outputtext.value = newoutput;
+	if (outputtext.value != ""){
+		var newoutput = inputtext.value;
+		var newinput = outputtext.value;
+		inputtext.value = newinput;
+		outputtext.value = newoutput;
+	}
 }
 
 
