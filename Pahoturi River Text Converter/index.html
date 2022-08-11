@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pahoturi River Text Converter</title>
+    <script src="conversion.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pahoturi River Text Converter</h1>
+    <p>Use this tool to convert between the orthographies for the various Pahoturi River languages and their IPA transcriptions. Languages with asterisks* have not been implemented yet</p>
+    <textarea name="inputtext" id="inputtext" cols="30" rows="10"></textarea>
+    <div class="convertdiv">
+        Convert
+        <select name="inputsystem" id="inputsystem">
+            <option value="agobem">Agob</option>
+            <option value="agobem">Em</option>
+            <option value="ende" selected>Ende</option>
+            <option value="idi">Idi*</option>
+            <option value="kawam">Kawam*</option>
+            <option value="taeme">Taeme</option>
+            <option value="ipa">IPA</option>
+        </select>
+        to
+        <select name="outputsystem" id="outputsystem">
+            <option value="agobem">Agob</option>
+            <option value="agobem">Em</option>
+            <option value="ende">Ende</option>
+            <option value="idi">Idi*</option>
+            <option value="kawam">Kawam*</option>
+            <option value="taeme">Taeme</option>
+            <option value="ipa" selected>IPA</option>
+        </select>
+        <button onclick="buttonPress()">Convert</button>
+        <button onclick="Swap()">Swap</button>
+    </div>
+    <textarea name="outputtext" id="outputtext" cols="30" rows="10"></textarea>
+    <p>For ease of input, "ix" is interpreted as "ɨ", "ax" as "ä", "ex" as "é", and "gx" as "ḡ".</p>
+    <p>For questions, suggestions, corrections, and comments, feel free to <a href="mailto:jackisaacrabinovitch@gmail.com">email me</a>.</p>
+</body>
+</html>
